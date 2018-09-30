@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(jwt());
+app.use(auth());
 
-app.use('/users', require('./users/controller'));
-app.use('/doc', require('./doc/controller'));
+// app.use('/users', require('./users/controller'));
+// app.use('/doc', require('./doc/controller'));
 
 app.use(errorHandler);
 
