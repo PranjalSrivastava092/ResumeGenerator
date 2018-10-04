@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(auth());
 
-app.use('/users', require('./users/controller'));
+app.use('/users', require('./user/controller'));
 // app.use('/doc', require('./doc/controller'));
 
 app.use(errorHandler);
