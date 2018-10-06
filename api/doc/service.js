@@ -8,10 +8,11 @@ module.exports = {
     get_All,
     Create,
     Update,
-    delete: delete
+    delete: _Delete
 };
 
 async function get_All() {
     return await Doc.find().select();
 }
+
 
