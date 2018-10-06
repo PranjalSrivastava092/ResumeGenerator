@@ -15,4 +15,6 @@ async function get_All() {
     return await Doc.find().select();
 }
 
-
+async function _Delete(id) {
+    await Doc.findByIdAndRemove(id);
+}
